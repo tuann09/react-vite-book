@@ -109,9 +109,11 @@ const HomePage = () => {
             if (cate && cate.length > 0) {
                 const f = cate.join(",");
                 setFilter(`category=${f}`);
+                setCurrent(1);
             } else {
                 //reset data -> fetch all
                 setFilter("");
+                setCurrent(1);
             }
         }
     };
